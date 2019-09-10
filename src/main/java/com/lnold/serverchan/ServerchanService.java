@@ -25,13 +25,11 @@ public class ServerchanService {
         requestUrl = "https://sc.ftqq.com/" + properties.getSckey() + ".send";
     }
 
-    public PushResult sendMessage(String text, String desp) {
-
+    public PushResult sendMessage(String title, String content) {
 
         RestTemplate client = new RestTemplate();
-
         //构造请求
-        HttpEntity<MultiValueMap<String, String>> request = generateRequest(text, desp);
+        HttpEntity<MultiValueMap<String, String>> request = generateRequest(title, content);
         //发送请求
         ResponseEntity<String> response = client.exchange(requestUrl, HttpMethod.POST, request, String.class);
         //解析结果
