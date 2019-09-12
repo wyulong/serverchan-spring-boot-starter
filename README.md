@@ -1,15 +1,8 @@
 # SpringBoot starter for Serverchan 
 Server酱推送服务starter，通过本starter可以快速集成Server酱推送服务到springboot工程  
-Server酱网址: [https://sc.ftqq.com][https://sc.ftqq.com]
-## 快速开始
-### 安装到本地仓库
-由于本工程暂未推送到中央仓库，所以需要手动安装jar到本地仓库
-```
-git clone https://gitee.com/wyulong/serverchan-spring-boot-starter.git
-cd serverchan-spring-boot-starter
-mvn clean install
-```
+Server酱网址: [https://sc.ftqq.com](https://sc.ftqq.com)
 
+## 快速开始
 ### 添加pom依赖
 ```xml
 <dependency>
@@ -20,7 +13,8 @@ mvn clean install
 ```
 ### 添加server酱配置
 application.properties中添加starter的配置  
-_**sckey需通过Server酱网站注册帐户后获取**_
+**sckey需通过[Server酱网站](https://sc.ftqq.com)注册帐户后获取**
+
 ```properties
 # server酱sckey
 spring.serverchan.sckey=YOUR_SCKEY
